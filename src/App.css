@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.header {
+  height: 70px;
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px #d7d7d7;
+}
+
+.restaurant-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.cart-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.my-orders {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cart-icon-container {
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 28px;
+  color: #585858;
+}
+
+.cart-count {
+  position: absolute;
+  top: -16px;
+  right: -12px;
+  background-color: #ff5b4f;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tabs-container {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.tab-button {
+  min-width: 160px;
+  padding: 18px 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #222222;
+}
+
+.active-tab {
+  color: #e85b5b;
+  border-bottom: 3px solid #e85b5b;
+}
+
+.dishes-container {
+  list-style-type: none;
+  padding: 12px;
+  margin: 0;
+}
+
+.dish-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px #dddddd;
+}
+
+.dish-type-box {
+  min-width: 28px;
+  height: 28px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dish-type-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.veg {
+  color: #00923f;
+  border-color: #00923f;
+  background-color: #00923f;
+}
+
+.non-veg {
+  color: #a82d2d;
+  border-color: #a82d2d;
+  background-color: #a82d2d;
+}
+
+.dish-details {
+  flex: 1;
+}
+
+.dish-name {
+  margin: 0;
+  color: #111111;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.dish-price {
+  color: #555555;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.dish-description {
+  color: #9b9b9b;
+  font-size: 16px;
+  max-width: 520px;
+}
+
+.quantity-container {
+  width: 130px;
+  height: 42px;
+  background-color: #2c8a17;
+  color: white;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.quantity-button {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.quantity {
+  font-size: 18px;
+}
+
+.not-available {
+  color: #e63946;
+  font-size: 14px;
+}
+
+.customization {
+  color: #5a40ff;
+  font-size: 16px;
+}
+
+.calories {
+  color: #ff9900;
+  font-weight: 700;
+  align-self: center;
+  min-width: 90px;
+}
+
+.dish-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.loading {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 10px 18px;
+  }
+
+  .restaurant-name {
+    font-size: 22px;
+  }
+
+  .my-orders {
+    display: none;
+  }
+
+  .tab-button {
+    min-width: 180px;
+  }
+
+  .dish-card {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .dish-name {
+    font-size: 20px;
+  }
+
+  .dish-description {
+    font-size: 16px;
+  }
+
+  .calories {
+    font-size: 16px;
+    min-width: 70px;
+  }
+
+  .dish-image {
+    width: 100px;
+    height: 100px;
+  }
+}
